@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume / CV | Ahbab Ali K. - MEP Design Engineer</title>
+  <meta name="description" content="View and download the official CV of Ahbab Ali K. - Mechanical Design Engineer & MEP Plumbing Specialist.">
+  
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚙️</text></svg>">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="stylesheet" href="styles.css">
+
+  <style>
+    /* ---- Print Styles ---- */
+    @media print {
+      body {
+        background: #ffffff !important;
+        color: #000000 !important;
+      }
+      .no-print { display: none !important; }
+      .cv-paper {
+        box-shadow: none !important;
+        border: none !important;
+        border-radius: 0 !important;
+        max-width: 100% !important;
+        padding: 0 !important;
+        background: #ffffff !important;
+        color: #000 !important;
+      }
+      .cv-paper * { color: inherit !important; }
+      .cv-left-col { background: #f5f5f5 !important; }
+      .cv-section-title { color: #b88d22 !important; border-color: #b88d22 !important; }
+      .cv-gold { color: #b88d22 !important; }
+      .cv-skill-bar { background: #ddd !important; }
+      .cv-skill-fill { background: #b88d22 !important; }
+      a { color: inherit !important; text-decoration: none !important; }
+    }
+  </style>
+</head>
+<body class="bg-[#080808] text-white font-palatino selection:bg-[#e5b842] selection:text-black">
+
+  <div class="gold-ambient-glow"></div>
+
+  <!-- ==================== NAVIGATION BAR ==================== -->
+  <header class="sticky top-0 z-50 nav-blur no-print">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-3 group">
+        <div class="w-10 h-10 rounded-lg bg-gradient-to-br from-[#e5b842]/20 to-black border border-[#e5b842]/40 flex items-center justify-center font-bold text-[#e5b842] text-sm group-hover:border-[#e5b842] transition-all">AK</div>
+        <div class="flex flex-col">
+          <span class="font-bold text-base tracking-wider uppercase text-white group-hover:text-[#e5b842] transition-colors">AHBAB ALI K.</span>
+          <span class="text-[10px] tracking-widest text-[#a3a3a3] uppercase">MEP & Mechanical Engineer</span>
+        </div>
+      </a>
+
+      <nav class="hidden lg:flex items-center gap-7 text-xs font-semibold tracking-wider uppercase text-[#a3a3a3]">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="experience.html" class="nav-link">Experience</a>
+        <a href="skills.html" class="nav-link">Skills</a>
+        <a href="projects.html" class="nav-link">Portfolio</a>
+        <a href="education.html" class="nav-link">Education</a>
+        <a href="resume.html" class="nav-link active">Resume</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="hidden sm:flex items-center gap-3">
+        <button onclick="window.print()" class="btn-gold py-2 px-5 text-xs font-semibold">
+          <i data-lucide="download" class="w-3.5 h-3.5"></i>
+          <span>Download CV</span>
+        </button>
+      </div>
+
+      <button id="mobile-menu-btn" class="lg:hidden p-2 rounded-lg text-slate-300 hover:text-white" aria-label="Toggle navigation">
+        <i data-lucide="menu" class="w-6 h-6"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div id="mobile-menu" class="hidden fixed inset-0 z-50 bg-black/90 backdrop-blur-xl lg:hidden no-print">
+    <div class="fixed top-0 right-0 w-4/5 max-w-sm h-full bg-[#0d0d0d] border-l border-white/10 p-6 flex flex-col justify-between overflow-y-auto">
+      <div>
+        <div class="flex items-center justify-between pb-6 border-b border-white/10">
+          <div class="flex items-center gap-2">
+            <span class="w-8 h-8 rounded-lg bg-[#e5b842]/20 border border-[#e5b842]/40 flex items-center justify-center font-bold text-[#e5b842] text-xs">AK</span>
+            <span class="font-bold text-white text-sm">Navigation</span>
+          </div>
+          <button id="close-menu-btn" class="p-2 text-slate-400 hover:text-white">
+            <i data-lucide="x" class="w-6 h-6"></i>
+          </button>
+        </div>
+        <nav class="mt-6 flex flex-col gap-2">
+          <a href="index.html" class="mobile-nav-link p-3 rounded-lg text-slate-300 hover:bg-white/5 hover:text-[#e5b842] flex items-center justify-between"><span>Home</span><i data-lucide="chevron-right" class="w-4 h-4 text-slate-500"></i></a>
+          <a href="about.html" class="mobile-nav-link p-3 rounded-lg text-slate-300 hover:bg-white/5 hover:text-[#e5b842] flex items-center justify-between"><span>About</span><i data-lucide="chevron-right" class="w-4 h-4 text-slate-500"></i></a>
+          <a href="experience.html" class="mobile-nav-link p-3 rounded-lg text-slate-300 hover:bg-white/5 hover:text-[#e5b842] flex items-center justify-between"><span>Experience</span><i data-lucide="chevron-right" class="w-4 h-4 text-slate-500"></i></a>
+          <a href="skills.html" class="mobile-nav-link p-3 rounded-lg text-slate-300 hover:bg-white/5 hover:text-[#e5b842] flex items-center justify-between"><span>Skills</span><i data-lucide="chevron-right" class="w-4 h-4 text-slate-500"></i></a>
+          <a href="projects.html" class="mobile-nav-link p-3 rounded-lg text-slate-300 hover:bg-white/5 hover:text-[#e5b842] flex items-center justify-between"><span>Portfolio</span><i data-lucide="chevron-right" class="w-4 h-4 text-slate-500"></i></a>
+          <a href="education.html" class="mobile-nav-link p-3 rounded-lg text-slate-300 hover:bg-white/5 hover:text-[#e5b842] flex items-center justify-between"><span>Education</span><i data-lucide="chevron-right" class="w-4 h-4 text-slate-500"></i></a>
+          <a href="resume.html" class="mobile-nav-link p-3 rounded-lg text-slate-300 hover:bg-white/5 hover:text-[#e5b842] flex items-center justify-between active"><span>Resume</span><i data-lucide="chevron-right" class="w-4 h-4 text-slate-500"></i></a>
+          <a href="contact.html" class="mobile-nav-link p-3 rounded-lg text-slate-300 hover:bg-white/5 hover:text-[#e5b842] flex items-center justify-between"><span>Contact</span><i data-lucide="chevron-right" class="w-4 h-4 text-slate-500"></i></a>
+        </nav>
+      </div>
+      <div class="pt-6 border-t border-white/10">
+        <button onclick="window.print()" class="btn-gold w-full text-xs">
+          <i data-lucide="download" class="w-4 h-4"></i> Download / Print CV
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== PAGE HEADER ==================== -->
+  <main class="relative z-10 flex-grow">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12 no-print">
+      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-6 mb-8">
+        <div>
+          <span class="section-tag mb-2">CURRICULUM VITAE</span>
+          <h1 class="text-3xl sm:text-4xl font-bold text-white mt-1">Official Resume</h1>
+          <p class="text-sm text-[#a3a3a3] mt-2">Click <strong class="text-[#e5b842]">Download / Print CV</strong> to save as PDF.</p>
+        </div>
+        <div class="flex items-center gap-3">
+          <a href="contact.html" class="btn-dark text-xs py-3 px-5">
+            <i data-lucide="mail" class="w-4 h-4 text-[#e5b842]"></i>
+            <span>Hire Me</span>
+          </a>
+          <button onclick="window.print()" class="btn-gold text-sm py-3 px-7 font-bold">
+            <i data-lucide="download" class="w-4 h-4"></i>
+            <span>Download / Print CV</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ==================== CV PAPER ==================== -->
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 pb-20">
+      <div class="cv-paper rounded-2xl overflow-hidden shadow-2xl border border-white/10" style="background:#111111;">
+
+        <!-- Two-column layout -->
+        <div class="flex flex-col lg:flex-row">
+
+          <!-- LEFT COLUMN: Sidebar -->
+          <div class="cv-left-col lg:w-72 flex-shrink-0 p-7 sm:p-8 flex flex-col gap-7" style="background:#0d0d0d; border-right:1px solid rgba(255,255,255,0.07);">
+            
+            <!-- Profile Name (No Photo) -->
+            <div class="flex flex-col items-center text-center gap-2 pt-2">
+              <div class="w-16 h-16 rounded-2xl bg-[#e5b842]/10 border border-[#e5b842]/30 flex items-center justify-center font-bold text-[#e5b842] text-2xl">
+                AK
+              </div>
+              <div>
+                <h1 class="text-xl font-bold text-white leading-tight">Ahbab Ali K.</h1>
+                <p class="cv-gold text-xs font-semibold tracking-wide mt-1" style="color:#e5b842;">Mechanical Design Engineer</p>
+                <p class="text-[11px] text-[#a3a3a3] mt-0.5">MEP Plumbing & HVAC Specialist</p>
+              </div>
+            </div>
+
+            <!-- Contact Info -->
+            <div>
+              <h3 class="cv-section-title text-[10px] font-bold uppercase tracking-widest mb-3 pb-2" style="color:#e5b842; border-bottom:1px solid rgba(229,184,66,0.25);">Contact</h3>
+              <div class="space-y-2.5 text-xs text-[#a3a3a3]">
+                <div class="flex items-start gap-2">
+                  <i data-lucide="mail" class="w-3.5 h-3.5 text-[#e5b842] shrink-0 mt-0.5"></i>
+                  <a href="mailto:alikahbab@gmail.com" class="hover:text-[#e5b842] break-all">alikahbab@gmail.com</a>
+                </div>
+                <div class="flex items-start gap-2">
+                  <i data-lucide="phone" class="w-3.5 h-3.5 text-[#e5b842] shrink-0 mt-0.5"></i>
+                  <a href="tel:+917559814085" class="hover:text-[#e5b842]">+91 7559814085</a>
+                </div>
+                <div class="flex items-start gap-2">
+                  <i data-lucide="map-pin" class="w-3.5 h-3.5 text-[#e5b842] shrink-0 mt-0.5"></i>
+                  <span>Malappuram, Kerala & Bengaluru, India</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Core Skills -->
+            <div>
+              <h3 class="cv-section-title text-[10px] font-bold uppercase tracking-widest mb-3 pb-2" style="color:#e5b842; border-bottom:1px solid rgba(229,184,66,0.25);">Technical Skills</h3>
+              <div class="space-y-2.5">
+                <div class="text-xs">
+                  <div class="flex justify-between text-[#a3a3a3] mb-1"><span>AutoCAD 2D / 3D</span><span class="text-[#e5b842]">Expert</span></div>
+                  <div class="cv-skill-bar h-1 rounded-full" style="background:rgba(255,255,255,0.08);"><div class="cv-skill-fill h-full rounded-full" style="width:92%;background:#e5b842;"></div></div>
+                </div>
+                <div class="text-xs">
+                  <div class="flex justify-between text-[#a3a3a3] mb-1"><span>MEP Plumbing Design</span><span class="text-[#e5b842]">Expert</span></div>
+                  <div class="cv-skill-bar h-1 rounded-full" style="background:rgba(255,255,255,0.08);"><div class="cv-skill-fill h-full rounded-full" style="width:90%;background:#e5b842;"></div></div>
+                </div>
+                <div class="text-xs">
+                  <div class="flex justify-between text-[#a3a3a3] mb-1"><span>HVAC Drafting</span><span class="text-[#e5b842]">Proficient</span></div>
+                  <div class="cv-skill-bar h-1 rounded-full" style="background:rgba(255,255,255,0.08);"><div class="cv-skill-fill h-full rounded-full" style="width:80%;background:#e5b842;"></div></div>
+                </div>
+                <div class="text-xs">
+                  <div class="flex justify-between text-[#a3a3a3] mb-1"><span>Revit MEP</span><span class="text-[#e5b842]">Proficient</span></div>
+                  <div class="cv-skill-bar h-1 rounded-full" style="background:rgba(255,255,255,0.08);"><div class="cv-skill-fill h-full rounded-full" style="width:75%;background:#e5b842;"></div></div>
+                </div>
+                <div class="text-xs">
+                  <div class="flex justify-between text-[#a3a3a3] mb-1"><span>QTO & Estimation</span><span class="text-[#e5b842]">Expert</span></div>
+                  <div class="cv-skill-bar h-1 rounded-full" style="background:rgba(255,255,255,0.08);"><div class="cv-skill-fill h-full rounded-full" style="width:88%;background:#e5b842;"></div></div>
+                </div>
+                <div class="text-xs">
+                  <div class="flex justify-between text-[#a3a3a3] mb-1"><span>BOQ Preparation</span><span class="text-[#e5b842]">Expert</span></div>
+                  <div class="cv-skill-bar h-1 rounded-full" style="background:rgba(255,255,255,0.08);"><div class="cv-skill-fill h-full rounded-full" style="width:88%;background:#e5b842;"></div></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Education -->
+            <div>
+              <h3 class="cv-section-title text-[10px] font-bold uppercase tracking-widest mb-3 pb-2" style="color:#e5b842; border-bottom:1px solid rgba(229,184,66,0.25);">Education</h3>
+              <div class="space-y-3 text-xs text-[#a3a3a3]">
+                <div>
+                  <p class="text-white font-semibold text-[11px]">Diploma in Mechanical Engineering</p>
+                  <p>Ma'din Polytechnic College, Malappuram</p>
+                </div>
+                <div>
+                  <p class="text-white font-semibold text-[11px]">AutoCAD 2D & 3D Certified</p>
+                  <p>CAD Point, Manjeri</p>
+                </div>
+                <div>
+                  <p class="text-white font-semibold text-[11px]">Revit MEP & HVAC Certified</p>
+                  <p>CAD Point, Manjeri</p>
+                </div>
+                <div>
+                  <p class="text-white font-semibold text-[11px]">S.S.L.C. (10th Grade)</p>
+                  <p>Board of Public Examination, Kerala</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Languages -->
+            <div>
+              <h3 class="cv-section-title text-[10px] font-bold uppercase tracking-widest mb-3 pb-2" style="color:#e5b842; border-bottom:1px solid rgba(229,184,66,0.25);">Languages</h3>
+              <div class="space-y-1 text-xs text-[#a3a3a3]">
+                <div class="flex justify-between"><span>English</span><span class="text-[#e5b842]">Fluent</span></div>
+                <div class="flex justify-between"><span>Malayalam</span><span class="text-[#e5b842]">Native</span></div>
+              </div>
+            </div>
+
+            <!-- Strengths -->
+            <div>
+              <h3 class="cv-section-title text-[10px] font-bold uppercase tracking-widest mb-3 pb-2" style="color:#e5b842; border-bottom:1px solid rgba(229,184,66,0.25);">Strengths</h3>
+              <div class="flex flex-wrap gap-1.5">
+                <span class="text-[10px] px-2 py-1 rounded-full text-[#a3a3a3]" style="background:rgba(229,184,66,0.08); border:1px solid rgba(229,184,66,0.2);">Leadership</span>
+                <span class="text-[10px] px-2 py-1 rounded-full text-[#a3a3a3]" style="background:rgba(229,184,66,0.08); border:1px solid rgba(229,184,66,0.2);">Adaptability</span>
+                <span class="text-[10px] px-2 py-1 rounded-full text-[#a3a3a3]" style="background:rgba(229,184,66,0.08); border:1px solid rgba(229,184,66,0.2);">Communication</span>
+                <span class="text-[10px] px-2 py-1 rounded-full text-[#a3a3a3]" style="background:rgba(229,184,66,0.08); border:1px solid rgba(229,184,66,0.2);">Technical Drafting</span>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- RIGHT COLUMN: Main Content -->
+          <div class="flex-1 p-7 sm:p-9">
+
+            <!-- Professional Profile -->
+            <section class="mb-8">
+              <h2 class="cv-section-title text-[10px] font-bold uppercase tracking-widest mb-3 pb-2" style="color:#e5b842; border-bottom:1px solid rgba(229,184,66,0.2);">Professional Profile</h2>
+              <p class="text-sm text-[#c0c0c0] leading-relaxed font-palatino">
+                A highly motivated Mechanical Engineering diploma holder with extensive practical experience in MEP Plumbing Design, HVAC system drafting, and Quantity Take-off (QTO) Estimation. Skilled in translating complex architectural and structural layouts into constructible, code-compliant MEP schematics for large-scale commercial retail complexes, multi-specialty hospitals, and industrial facilities. Seeking a growth-oriented position to apply advanced AutoCAD and Revit MEP modeling capabilities.
+              </p>
+            </section>
+
+            <!-- Work Experience -->
+            <section class="mb-8">
+              <h2 class="cv-section-title text-[10px] font-bold uppercase tracking-widest mb-4 pb-2" style="color:#e5b842; border-bottom:1px solid rgba(229,184,66,0.2);">Work Experience</h2>
+              <div class="space-y-6">
+
+                <!-- Job 1 -->
+                <div>
+                  <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-1 mb-1">
+                    <div>
+                      <h3 class="text-white font-bold text-sm">MEP Plumbing Design Engineer & Estimation Engineer</h3>
+                      <p class="text-[#e5b842] text-xs font-semibold">A-SQUARE MEP Consultants — Bengaluru</p>
+                    </div>
+                    <span class="text-xs text-[#737373] font-mono whitespace-nowrap">15/07 – Present</span>
+                  </div>
+                  <ul class="mt-2 space-y-1 text-xs text-[#a3a3a3] leading-relaxed">
+                    <li class="flex gap-2"><span class="text-[#e5b842] shrink-0 mt-0.5">▸</span> Preparation of complete Mechanical Systems (Plumbing and HVAC).</li>
+                    <li class="flex gap-2"><span class="text-[#e5b842] shrink-0 mt-0.5">▸</span> Familiar with tendering and bidding of projects with comprehensive Quantity Take Off (QTO).</li>
+                    <li class="flex gap-2"><span class="text-[#e5b842] shrink-0 mt-0.5">▸</span> <strong class="text-white">Estimation Engineer (MEP):</strong> Providing complete quantity take-off for Civil & Plumbing (MEP) systems, rate analysis, cost estimates, and feasibility studies.</li>
+                  </ul>
+                </div>
+
+                <!-- Job 2 -->
+                <div>
+                  <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-1 mb-1">
+                    <div>
+                      <h3 class="text-white font-bold text-sm">Plumbing Designer & Estimation Engineer</h3>
+                      <p class="text-[#e5b842] text-xs font-semibold">AMS Electro Consultants and Contractors Pvt. Ltd. — Calicut, Kerala</p>
+                    </div>
+                    <span class="text-xs text-[#737373] font-mono whitespace-nowrap">02/2024 – 06/2025</span>
+                  </div>
+                  <ul class="mt-2 space-y-1 text-xs text-[#a3a3a3] leading-relaxed">
+                    <li class="flex gap-2"><span class="text-[#e5b842] shrink-0 mt-0.5">▸</span> Preparation of Mechanical Systems (Plumbing and HVAC) coordinated drawings.</li>
+                    <li class="flex gap-2"><span class="text-[#e5b842] shrink-0 mt-0.5">▸</span> Familiar with tendering/bidding projects and complete quantity take-offs.</li>
+                    <li class="flex gap-2"><span class="text-[#e5b842] shrink-0 mt-0.5">▸</span> Providing complete quantity take-off for Civil & Plumbing (MEP) systems, bill of quantities, and estimate studies.</li>
+                  </ul>
+                </div>
+
+                <!-- Job 3 -->
+                <div>
+                  <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-1 mb-1">
+                    <div>
+                      <h3 class="text-white font-bold text-sm">Plumbing Draftsman & MEP Designer</h3>
+                      <p class="text-[#e5b842] text-xs font-semibold">Four Square Engineers — Calicut, Kerala</p>
+                    </div>
+                    <span class="text-xs text-[#737373] font-mono whitespace-nowrap">Prior to 02/2024</span>
+                  </div>
+                  <ul class="mt-2 space-y-1 text-xs text-[#a3a3a3] leading-relaxed">
+                    <li class="flex gap-2"><span class="text-[#e5b842] shrink-0 mt-0.5">▸</span> Preparation of Mechanical Systems (Plumbing and HVAC).</li>
+                    <li class="flex gap-2"><span class="text-[#e5b842] shrink-0 mt-0.5">▸</span> Familiar with tendering/bidding projects and quantity take-off for Civil & MEP scopes.</li>
+                    <li class="flex gap-2"><span class="text-[#e5b842] shrink-0 mt-0.5">▸</span> End-to-end responsibilities including MEP drafting and coordinated drawing delivery.</li>
+                  </ul>
+                </div>
+
+                <!-- Job 4 -->
+                <div>
+                  <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-1 mb-1">
+                    <div>
+                      <h3 class="text-white font-bold text-sm">AutoCAD Trainee</h3>
+                      <p class="text-[#e5b842] text-xs font-semibold">CAD Point, Manjeri — Kerala</p>
+                    </div>
+                    <span class="text-xs text-[#737373] font-mono whitespace-nowrap">08/2022 – 11/2022</span>
+                  </div>
+                  <p class="mt-1 text-xs text-[#a3a3a3] flex gap-2"><span class="text-[#e5b842] shrink-0 mt-0.5">▸</span> 3-month intensive training in AutoCAD 2D & 3D mechanical drafting and MEP drawing conventions.</p>
+                </div>
+
+              </div>
+            </section>
+
+            <!-- Projects -->
+            <section class="mb-8">
+              <h2 class="cv-section-title text-[10px] font-bold uppercase tracking-widest mb-4 pb-2" style="color:#e5b842; border-bottom:1px solid rgba(229,184,66,0.2);">Major Projects Executed</h2>
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs">
+                <div class="p-3.5 rounded-xl" style="background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.07);">
+                  <h4 class="font-bold text-white text-[11px] mb-1">M/s. LULU MALL, TIRUR</h4>
+                  <p class="text-[#a3a3a3] leading-relaxed">Drainage, water supply coordination. Ring water schematic, water quality & tank elevation drawings.</p>
+                </div>
+                <div class="p-3.5 rounded-xl" style="background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.07);">
+                  <h4 class="font-bold text-white text-[11px] mb-1">M/s. LULU MALL, KOTTAKKAL</h4>
+                  <p class="text-[#a3a3a3] leading-relaxed">Drainage, water supply, ring water schematic, ring water quality & tank elevation drawings.</p>
+                </div>
+                <div class="p-3.5 rounded-xl" style="background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.07);">
+                  <h4 class="font-bold text-white text-[11px] mb-1">PERINTHALMANNA NURSING HOME</h4>
+                  <p class="text-[#a3a3a3] leading-relaxed">Clinical sanitary drainage, water supply, ring water schematic & tank elevation drawings.</p>
+                </div>
+                <div class="p-3.5 rounded-xl" style="background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.07);">
+                  <h4 class="font-bold text-white text-[11px] mb-1">M/s. AAK HOTEL, KOTTAKKAL</h4>
+                  <p class="text-[#a3a3a3] leading-relaxed">Drainage, water supply, coordination & ring water schematic drawing preparation.</p>
+                </div>
+                <div class="p-3.5 rounded-xl" style="background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.07);">
+                  <h4 class="font-bold text-white text-[11px] mb-1">MILMA — MALABAR MILK PRODUCERS</h4>
+                  <p class="text-[#a3a3a3] leading-relaxed">Industrial drainage, water supply, AutoCAD schematics & water quality layout preparation.</p>
+                </div>
+                <div class="p-3.5 rounded-xl" style="background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.07);">
+                  <h4 class="font-bold text-white text-[11px] mb-1">PORTABLE EV CHARGING STATION</h4>
+                  <p class="text-[#a3a3a3] leading-relaxed">Mechanical chassis, rapid charging cable management & thermal dissipation design (Diploma Capstone).</p>
+                </div>
+              </div>
+            </section>
+
+            <!-- Personal Details -->
+            <section>
+              <h2 class="cv-section-title text-[10px] font-bold uppercase tracking-widest mb-3 pb-2" style="color:#e5b842; border-bottom:1px solid rgba(229,184,66,0.2);">Personal Details</h2>
+              <div class="grid grid-cols-2 gap-2 text-xs text-[#a3a3a3]">
+                <div><span class="text-white font-semibold">Father:</span> Ali K.</div>
+                <div><span class="text-white font-semibold">Mother:</span> Asma A.</div>
+                <div class="col-span-2"><span class="text-white font-semibold">Address:</span> Valaprakandiyil House, Cheruputhoor, Mongam, Malappuram, Kerala – 673642</div>
+              </div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Download CTA Banner -->
+      <div class="mt-8 gold-card p-6 flex flex-col sm:flex-row items-center justify-between gap-4 no-print">
+        <div>
+          <h3 class="text-white font-bold text-base">Save this CV as PDF</h3>
+          <p class="text-xs text-[#a3a3a3] mt-1">Use your browser's Print dialog → choose <strong class="text-white">Save as PDF</strong> as the printer.</p>
+        </div>
+        <div class="flex gap-3 flex-shrink-0">
+          <a href="contact.html" class="btn-dark text-xs py-2.5 px-5">
+            <i data-lucide="mail" class="w-4 h-4 text-[#e5b842]"></i><span>Hire Me</span>
+          </a>
+          <button onclick="window.print()" class="btn-gold text-sm py-2.5 px-7 font-bold">
+            <i data-lucide="printer" class="w-4 h-4"></i><span>Print / Save PDF</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="border-t border-white/[0.08] bg-[#050505] py-12 no-print">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6">
+      <a href="index.html" class="flex items-center gap-2.5">
+        <div class="w-8 h-8 rounded-lg bg-[#e5b842]/20 border border-[#e5b842]/40 flex items-center justify-center font-bold text-[#e5b842] text-xs">AK</div>
+        <span class="font-bold text-sm tracking-wider uppercase text-white">AHBAB ALI K.</span>
+      </a>
+      <nav class="flex flex-wrap items-center justify-center gap-6 text-xs text-[#a3a3a3]">
+        <a href="index.html" class="hover:text-white transition-colors">Home</a>
+        <a href="about.html" class="hover:text-white transition-colors">About</a>
+        <a href="experience.html" class="hover:text-white transition-colors">Experience</a>
+        <a href="skills.html" class="hover:text-white transition-colors">Skills</a>
+        <a href="projects.html" class="hover:text-white transition-colors">Portfolio</a>
+        <a href="education.html" class="hover:text-white transition-colors">Education</a>
+        <a href="resume.html" class="text-[#e5b842] font-semibold">Resume</a>
+        <a href="contact.html" class="hover:text-white transition-colors">Contact</a>
+      </nav>
+      <div class="flex items-center gap-4 text-xs text-[#737373]">
+        <p>&copy; 2026 Ahbab Ali K. All Rights Reserved.</p>
+        <button onclick="window.scrollTo({top: 0, behavior: 'smooth'})" class="w-8 h-8 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:text-white transition-colors">
+          <i data-lucide="arrow-up" class="w-4 h-4"></i>
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

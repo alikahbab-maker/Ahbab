@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio | Ahbab Ali K. - Mechanical Design Engineer</title>
+  <meta name="description" content="Engineering project portfolio of Ahbab Ali K. featuring Lulu Mall, Perinthalmanna Nursing Home, AAK Hotel, and MILMA industrial MEP plumbing designs.">
+  
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚙️</text></svg>">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-[#080808] text-white font-palatino selection:bg-[#e5b842] selection:text-black">
+
+  <div class="gold-ambient-glow"></div>
+
+  <!-- ==================== NAVIGATION BAR ==================== -->
+  <header class="sticky top-0 z-50 nav-blur">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      
+      <!-- Brand Logo / Monogram -->
+      <a href="index.html" class="flex items-center gap-3 group">
+        <div class="w-10 h-10 rounded-lg bg-gradient-to-br from-[#e5b842]/20 to-black border border-[#e5b842]/40 flex items-center justify-center font-bold text-[#e5b842] text-sm group-hover:border-[#e5b842] transition-all">
+          AK
+        </div>
+        <div class="flex flex-col">
+          <span class="font-bold text-base tracking-wider uppercase text-white group-hover:text-[#e5b842] transition-colors">AHBAB ALI K.</span>
+          <span class="text-[10px] tracking-widest text-[#a3a3a3] uppercase">MEP & Mechanical Engineer</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <nav class="hidden lg:flex items-center gap-7 text-xs font-semibold tracking-wider uppercase text-[#a3a3a3]">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="experience.html" class="nav-link">Experience</a>
+        <a href="skills.html" class="nav-link">Skills</a>
+        <a href="projects.html" class="nav-link active">Portfolio</a>
+        <a href="education.html" class="nav-link">Education</a>
+        <a href="resume.html" class="nav-link">Resume</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Desktop Right Button -->
+      <div class="hidden sm:flex items-center gap-3">
+        <a href="contact.html" class="btn-gold py-2 px-5 text-xs font-semibold">
+          <span>Let's Talk</span>
+          <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+        </a>
+      </div>
+
+      <!-- Mobile Hamburger Button -->
+      <button id="mobile-menu-btn" class="lg:hidden p-2 rounded-lg text-slate-300 hover:text-white" aria-label="Toggle navigation">
+        <i data-lucide="menu" class="w-6 h-6"></i>
+      </button>
+
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div id="mobile-menu" class="hidden fixed inset-0 z-50 bg-black/90 backdrop-blur-xl lg:hidden">
+    <div class="fixed top-0 right-0 w-4/5 max-w-sm h-full bg-[#0d0d0d] border-l border-white/10 p-6 flex flex-col justify-between overflow-y-auto">
+      <div>
+        <div class="flex items-center justify-between pb-6 border-b border-white/10">
+          <div class="flex items-center gap-2">
+            <span class="w-8 h-8 rounded-lg bg-[#e5b842]/20 border border-[#e5b842]/40 flex items-center justify-center font-bold text-[#e5b842] text-xs">AK</span>
+            <span class="font-bold text-white text-sm">Navigation</span>
+          </div>
+          <button id="close-menu-btn" class="p-2 text-slate-400 hover:text-white">
+            <i data-lucide="x" class="w-6 h-6"></i>
+          </button>
+        </div>
+
+        <nav class="mt-6 flex flex-col gap-2">
+          <a href="index.html" class="mobile-nav-link p-3 rounded-lg text-slate-300 hover:bg-white/5 hover:text-[#e5b842] flex items-center justify-between">
+            <span>Home</span> <i data-lucide="chevron-right" class="w-4 h-4 text-slate-500"></i>
+          </a>
+          <a href="about.html" class="mobile-nav-link p-3 rounded-lg text-slate-300 hover:bg-white/5 hover:text-[#e5b842] flex items-center justify-between">
+            <span>About</span> <i data-lucide="chevron-right" class="w-4 h-4 text-slate-500"></i>
+          </a>
+          <a href="experience.html" class="mobile-nav-link p-3 rounded-lg text-slate-300 hover:bg-white/5 hover:text-[#e5b842] flex items-center justify-between">
+            <span>Experience</span> <i data-lucide="chevron-right" class="w-4 h-4 text-slate-500"></i>
+          </a>
+          <a href="skills.html" class="mobile-nav-link p-3 rounded-lg text-slate-300 hover:bg-white/5 hover:text-[#e5b842] flex items-center justify-between">
+            <span>Skills</span> <i data-lucide="chevron-right" class="w-4 h-4 text-slate-500"></i>
+          </a>
+          <a href="projects.html" class="mobile-nav-link p-3 rounded-lg text-slate-300 hover:bg-white/5 hover:text-[#e5b842] flex items-center justify-between active">
+            <span>Portfolio</span> <i data-lucide="chevron-right" class="w-4 h-4 text-slate-500"></i>
+          </a>
+          <a href="education.html" class="mobile-nav-link p-3 rounded-lg text-slate-300 hover:bg-white/5 hover:text-[#e5b842] flex items-center justify-between">
+            <span>Education</span> <i data-lucide="chevron-right" class="w-4 h-4 text-slate-500"></i>
+          </a>
+          <a href="resume.html" class="mobile-nav-link p-3 rounded-lg text-slate-300 hover:bg-white/5 hover:text-[#e5b842] flex items-center justify-between">
+            <span>Resume</span> <i data-lucide="chevron-right" class="w-4 h-4 text-slate-500"></i>
+          </a>
+          <a href="contact.html" class="mobile-nav-link p-3 rounded-lg text-slate-300 hover:bg-white/5 hover:text-[#e5b842] flex items-center justify-between">
+            <span>Contact</span> <i data-lucide="chevron-right" class="w-4 h-4 text-slate-500"></i>
+          </a>
+        </nav>
+      </div>
+
+      <div class="pt-6 border-t border-white/10 flex flex-col gap-3">
+        <a href="assets/Ahbab_Ali_K_Resume.pdf" download class="btn-gold w-full text-xs">
+          <i data-lucide="download" class="w-4 h-4"></i> Download CV
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== MAIN PAGE CONTENT ==================== -->
+  <main class="relative z-10 flex-grow max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
+    
+    <!-- Page Header -->
+    <div class="mb-12">
+      <span class="section-tag mb-3">PORTFOLIO</span>
+      <h1 class="text-4xl sm:text-5xl font-bold text-white mt-1">Major Executed Projects</h1>
+      <p class="text-base sm:text-lg text-[#a3a3a3] mt-2 max-w-2xl font-palatino">
+        Verified engineering portfolio covering commercial shopping malls, healthcare facilities, hospitality, industrial plants, and capstone designs.
+      </p>
+    </div>
+
+    <!-- Filter Buttons Bar -->
+    <div class="flex flex-wrap items-center gap-3 mb-12 pb-4 border-b border-white/[0.08]">
+      <button class="filter-btn active" data-filter="all">All Projects</button>
+      <button class="filter-btn" data-filter="commercial">Commercial & Retail</button>
+      <button class="filter-btn" data-filter="healthcare">Healthcare</button>
+      <button class="filter-btn" data-filter="hospitality">Hospitality</button>
+      <button class="filter-btn" data-filter="industrial">Industrial</button>
+      <button class="filter-btn" data-filter="capstone">Capstone & Academic</button>
+    </div>
+
+    <!-- Project Gallery Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      
+      <!-- Project 1: Lulu Mall, Tirur -->
+      <article class="project-card gold-card flex flex-col justify-between group overflow-hidden" data-category="commercial">
+        <div>
+          <div class="relative h-60 bg-[#111] overflow-hidden">
+            <img src="assets/lulu_mall_tirur.jpg" alt="M/s. Lulu Mall, Tirur" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+            <div class="absolute inset-0 bg-gradient-to-t from-[#141414] via-transparent to-black/30"></div>
+            <span class="absolute top-3 right-3 text-[10px] font-semibold tracking-wider uppercase px-2.5 py-1 rounded-full bg-black/70 border border-[#e5b842]/40 text-[#e5b842] backdrop-blur-md">
+              Retail Complex
+            </span>
+          </div>
+
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-white mb-1 group-hover:text-[#e5b842] transition-colors">M/s. Lulu Mall, Tirur</h3>
+            <div class="text-xs text-[#e5b842] font-mono mb-3">Tirur, Malappuram, Kerala</div>
+            <p class="text-xs sm:text-sm text-[#a3a3a3] leading-relaxed mb-4">
+              Comprehensive designing & drafting of plumbing services: sanitary drainage, domestic cold water supply, coordination drawings, ring water schematic drawing preparation, water quality system layout, and complete tank elevation drawings.
+            </p>
+
+            <div class="space-y-1.5 text-xs text-[#a3a3a3] border-t border-white/[0.06] pt-3">
+              <div class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-[#e5b842]"></i> Ring Water Distribution Schematics</div>
+              <div class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-[#e5b842]"></i> Sump & Overhead Tank Elevation Blueprints</div>
+              <div class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-[#e5b842]"></i> High-Volume Public Restroom Drainage</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="p-6 pt-0">
+          <div class="flex flex-wrap gap-1.5 pt-3 border-t border-white/[0.06] text-[11px] font-mono">
+            <span class="px-2.5 py-1 rounded bg-white/5 text-white/80">AutoCAD 2D</span>
+            <span class="px-2.5 py-1 rounded bg-white/5 text-white/80">Ring Water Loops</span>
+            <span class="px-2.5 py-1 rounded bg-white/5 text-white/80">Tank Elevations</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project 2: Lulu Mall, Kottakkal -->
+      <article class="project-card gold-card flex flex-col justify-between group overflow-hidden" data-category="commercial">
+        <div>
+          <div class="relative h-60 bg-[#111] overflow-hidden">
+            <img src="assets/lulu_mall_kottakkal.jpg" alt="M/s. Lulu Mall, Kottakkal" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+            <div class="absolute inset-0 bg-gradient-to-t from-[#141414] via-transparent to-black/30"></div>
+            <span class="absolute top-3 right-3 text-[10px] font-semibold tracking-wider uppercase px-2.5 py-1 rounded-full bg-black/70 border border-[#e5b842]/40 text-[#e5b842] backdrop-blur-md">
+              Retail Complex
+            </span>
+          </div>
+
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-white mb-1 group-hover:text-[#e5b842] transition-colors">M/s. Lulu Mall, Kottakkal</h3>
+            <div class="text-xs text-[#e5b842] font-mono mb-3">Kottakkal, Kerala</div>
+            <p class="text-xs sm:text-sm text-[#a3a3a3] leading-relaxed mb-4">
+              Designing and drafting plumbing services, drainage networks, water supply distribution, and MEP coordination. Prepared ring water schematic drawings, water quality distribution networks, and all tank elevation drawings.
+            </p>
+
+            <div class="space-y-1.5 text-xs text-[#a3a3a3] border-t border-white/[0.06] pt-3">
+              <div class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-[#e5b842]"></i> Coordinated Drainage & Venting Systems</div>
+              <div class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-[#e5b842]"></i> Ring Water Quality Flow Engineering</div>
+              <div class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-[#e5b842]"></i> Detailed Tank Elevation Cross-Sections</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="p-6 pt-0">
+          <div class="flex flex-wrap gap-1.5 pt-3 border-t border-white/[0.06] text-[11px] font-mono">
+            <span class="px-2.5 py-1 rounded bg-white/5 text-white/80">AutoCAD 2D</span>
+            <span class="px-2.5 py-1 rounded bg-white/5 text-white/80">Water Supply</span>
+            <span class="px-2.5 py-1 rounded bg-white/5 text-white/80">MEP Coordination</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project 3: Perinthalmanna Nursing Home -->
+      <article class="project-card gold-card flex flex-col justify-between group overflow-hidden" data-category="healthcare">
+        <div>
+          <div class="relative h-60 bg-[#111] overflow-hidden">
+            <img src="assets/perinthalmanna_hospital.jpg" alt="Perinthalmanna Nursing Home" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+            <div class="absolute inset-0 bg-gradient-to-t from-[#141414] via-transparent to-black/30"></div>
+            <span class="absolute top-3 right-3 text-[10px] font-semibold tracking-wider uppercase px-2.5 py-1 rounded-full bg-black/70 border border-[#e5b842]/40 text-[#e5b842] backdrop-blur-md">
+              Healthcare
+            </span>
+          </div>
+
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-white mb-1 group-hover:text-[#e5b842] transition-colors">Perinthalmanna Nursing Home</h3>
+            <div class="text-xs text-[#e5b842] font-mono mb-3">Perinthalmanna, Kerala</div>
+            <p class="text-xs sm:text-sm text-[#a3a3a3] leading-relaxed mb-4">
+              Designing & drafting plumbing services: sanitary drainage, clinical and domestic water supply networks, interdisciplinary coordination, ring water schematic drawings, and storage tank elevation drawings.
+            </p>
+
+            <div class="space-y-1.5 text-xs text-[#a3a3a3] border-t border-white/[0.06] pt-3">
+              <div class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-[#e5b842]"></i> Hospital Sanitary Drainage & Anti-Siphonage</div>
+              <div class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-[#e5b842]"></i> Constant Pressure Water Supply Loops</div>
+              <div class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-[#e5b842]"></i> Tank Elevations & Valve Manifold Plans</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="p-6 pt-0">
+          <div class="flex flex-wrap gap-1.5 pt-3 border-t border-white/[0.06] text-[11px] font-mono">
+            <span class="px-2.5 py-1 rounded bg-white/5 text-white/80">Hospital Plumbing</span>
+            <span class="px-2.5 py-1 rounded bg-white/5 text-white/80">Sanitary Drainage</span>
+            <span class="px-2.5 py-1 rounded bg-white/5 text-white/80">Water Supply</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project 4: M/s. AAK Hotel -->
+      <article class="project-card gold-card flex flex-col justify-between group overflow-hidden" data-category="hospitality">
+        <div>
+          <div class="relative h-60 bg-[#111] overflow-hidden">
+            <img src="assets/aak_hotel.jpg" alt="M/s. AAK Hotel" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+            <div class="absolute inset-0 bg-gradient-to-t from-[#141414] via-transparent to-black/30"></div>
+            <span class="absolute top-3 right-3 text-[10px] font-semibold tracking-wider uppercase px-2.5 py-1 rounded-full bg-black/70 border border-[#e5b842]/40 text-[#e5b842] backdrop-blur-md">
+              Hospitality
+            </span>
+          </div>
+
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-white mb-1 group-hover:text-[#e5b842] transition-colors">M/s. AAK Hotel, Kottakkal</h3>
+            <div class="text-xs text-[#e5b842] font-mono mb-3">Kottakkal, Kerala</div>
+            <p class="text-xs sm:text-sm text-[#a3a3a3] leading-relaxed mb-4">
+              Designing and drafting plumbing services, sanitary drainage, domestic cold and hot water distribution, grease trap integrations for commercial kitchens, and ring water schematic drawing preparation.
+            </p>
+
+            <div class="space-y-1.5 text-xs text-[#a3a3a3] border-t border-white/[0.06] pt-3">
+              <div class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-[#e5b842]"></i> Guest Room Riser & Multi-Tier Drainage</div>
+              <div class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-[#e5b842]"></i> Commercial Kitchen Waste & Grease Traps</div>
+              <div class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-[#e5b842]"></i> Ring Water Schematic Drafting</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="p-6 pt-0">
+          <div class="flex flex-wrap gap-1.5 pt-3 border-t border-white/[0.06] text-[11px] font-mono">
+            <span class="px-2.5 py-1 rounded bg-white/5 text-white/80">Hospitality MEP</span>
+            <span class="px-2.5 py-1 rounded bg-white/5 text-white/80">Drainage</span>
+            <span class="px-2.5 py-1 rounded bg-white/5 text-white/80">Schematic Drawings</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project 5: MILMA Union Ltd. -->
+      <article class="project-card gold-card flex flex-col justify-between group overflow-hidden" data-category="industrial">
+        <div>
+          <div class="relative h-60 bg-[#111] overflow-hidden">
+            <img src="assets/milma_dairy_plant.jpg" alt="MILMA Union" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+            <div class="absolute inset-0 bg-gradient-to-t from-[#141414] via-transparent to-black/30"></div>
+            <span class="absolute top-3 right-3 text-[10px] font-semibold tracking-wider uppercase px-2.5 py-1 rounded-full bg-black/70 border border-[#e5b842]/40 text-[#e5b842] backdrop-blur-md">
+              Industrial Dairy
+            </span>
+          </div>
+
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-white mb-1 group-hover:text-[#e5b842] transition-colors">MILMA - Milk Producers Union</h3>
+            <div class="text-xs text-[#e5b842] font-mono mb-3">Malabar Regional Co-op Milk Producers’ Union Ltd.</div>
+            <p class="text-xs sm:text-sm text-[#a3a3a3] leading-relaxed mb-4">
+              Designing & drafting industrial plumbing services, industrial drainage systems, process water supply lines, AutoCAD schematic drawing preparation, and water quality layout engineering.
+            </p>
+
+            <div class="space-y-1.5 text-xs text-[#a3a3a3] border-t border-white/[0.06] pt-3">
+              <div class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-[#e5b842]"></i> Industrial Effluent & Floor Drainage</div>
+              <div class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-[#e5b842]"></i> High-Flow Processing Water Lines</div>
+              <div class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-[#e5b842]"></i> AutoCAD Schematic Preparation</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="p-6 pt-0">
+          <div class="flex flex-wrap gap-1.5 pt-3 border-t border-white/[0.06] text-[11px] font-mono">
+            <span class="px-2.5 py-1 rounded bg-white/5 text-white/80">Industrial MEP</span>
+            <span class="px-2.5 py-1 rounded bg-white/5 text-white/80">Effluent Drainage</span>
+            <span class="px-2.5 py-1 rounded bg-white/5 text-white/80">Water Quality</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project 6: Portable EV Charging Station -->
+      <article class="project-card gold-card flex flex-col justify-between group overflow-hidden" data-category="capstone">
+        <div>
+          <div class="relative h-60 bg-[#111] overflow-hidden">
+            <img src="assets/ev_charging_station.jpg" alt="Portable EV Charging Station" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+            <div class="absolute inset-0 bg-gradient-to-t from-[#141414] via-transparent to-black/30"></div>
+            <span class="absolute top-3 right-3 text-[10px] font-semibold tracking-wider uppercase px-2.5 py-1 rounded-full bg-black/70 border border-[#e5b842]/40 text-[#e5b842] backdrop-blur-md">
+              Diploma Project
+            </span>
+          </div>
+
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-white mb-1 group-hover:text-[#e5b842] transition-colors">Portable EV Charging Station</h3>
+            <div class="text-xs text-[#e5b842] font-mono mb-3">Ma'din Polytechnic College Diploma Capstone</div>
+            <p class="text-xs sm:text-sm text-[#a3a3a3] leading-relaxed mb-4">
+              Mechanical design, sheet metal chassis layout, thermal ventilation airflow drafting, and cable management fabrication for a portable electric vehicle charging unit.
+            </p>
+
+            <div class="space-y-1.5 text-xs text-[#a3a3a3] border-t border-white/[0.06] pt-3">
+              <div class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-[#e5b842]"></i> Structural Sheet Metal CAD Drafting</div>
+              <div class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-[#e5b842]"></i> Thermal Dissipation & Ventilation Louvers</div>
+              <div class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-[#e5b842]"></i> Compact Portable Form Factor</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="p-6 pt-0">
+          <div class="flex flex-wrap gap-1.5 pt-3 border-t border-white/[0.06] text-[11px] font-mono">
+            <span class="px-2.5 py-1 rounded bg-white/5 text-white/80">Mechanical Design</span>
+            <span class="px-2.5 py-1 rounded bg-white/5 text-white/80">AutoCAD 3D</span>
+            <span class="px-2.5 py-1 rounded bg-white/5 text-white/80">Fabrication Drafting</span>
+          </div>
+        </div>
+      </article>
+
+    </div>
+
+    <!-- Navigation Prompt -->
+    <div class="mt-16 text-center">
+      <div class="inline-flex flex-wrap items-center justify-center gap-4">
+        <a href="contact.html" class="btn-gold">
+          <span>Inquire About Engineering Services</span>
+          <i data-lucide="arrow-right" class="w-4 h-4"></i>
+        </a>
+        <a href="assets/Ahbab_Ali_K_Resume.pdf" download class="btn-dark">
+          <i data-lucide="download" class="w-4 h-4 text-[#e5b842]"></i>
+          <span>Download Verifiable Resume PDF</span>
+        </a>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="border-t border-white/[0.08] bg-[#050505] py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6">
+      
+      <a href="index.html" class="flex items-center gap-2.5">
+        <div class="w-8 h-8 rounded-lg bg-[#e5b842]/20 border border-[#e5b842]/40 flex items-center justify-center font-bold text-[#e5b842] text-xs">
+          AK
+        </div>
+        <span class="font-bold text-sm tracking-wider uppercase text-white">AHBAB ALI K.</span>
+      </a>
+
+      <nav class="flex flex-wrap items-center justify-center gap-6 text-xs text-[#a3a3a3]">
+        <a href="index.html" class="hover:text-white transition-colors">Home</a>
+        <a href="about.html" class="hover:text-white transition-colors">About</a>
+        <a href="experience.html" class="hover:text-white transition-colors">Experience</a>
+        <a href="skills.html" class="hover:text-white transition-colors">Skills</a>
+        <a href="projects.html" class="hover:text-white transition-colors">Portfolio</a>
+        <a href="education.html" class="hover:text-white transition-colors">Education</a>
+        <a href="resume.html" class="hover:text-white transition-colors">Resume</a>
+        <a href="contact.html" class="hover:text-white transition-colors">Contact</a>
+      </nav>
+
+      <div class="flex items-center gap-4 text-xs text-[#737373]">
+        <p>&copy; 2026 Ahbab Ali K. All Rights Reserved.</p>
+        <button onclick="window.scrollTo({top: 0, behavior: 'smooth'})" class="w-8 h-8 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:text-white transition-colors" title="Scroll to top">
+          <i data-lucide="arrow-up" class="w-4 h-4"></i>
+        </button>
+      </div>
+
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

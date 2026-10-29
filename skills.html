@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skills | Ahbab Ali K. - Mechanical Design Engineer</title>
+  <meta name="description" content="Technical engineering competencies of Ahbab Ali K. including AutoCAD 2D & 3D, MEP plumbing design, Revit MEP, HVAC, and Quantity Takeoff.">
+  
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚙️</text></svg>">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-[#080808] text-white font-palatino selection:bg-[#e5b842] selection:text-black">
+
+  <div class="gold-ambient-glow"></div>
+
+  <!-- ==================== NAVIGATION BAR ==================== -->
+  <header class="sticky top-0 z-50 nav-blur">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      
+      <a href="index.html" class="flex items-center gap-3 group">
+        <div class="w-10 h-10 rounded-lg bg-gradient-to-br from-[#e5b842]/20 to-black border border-[#e5b842]/40 flex items-center justify-center font-bold text-[#e5b842] text-sm group-hover:border-[#e5b842] transition-all">
+          AK
+        </div>
+        <div class="flex flex-col">
+          <span class="font-bold text-base tracking-wider uppercase text-white group-hover:text-[#e5b842] transition-colors">AHBAB ALI K.</span>
+          <span class="text-[10px] tracking-widest text-[#a3a3a3] uppercase">MEP & Mechanical Engineer</span>
+        </div>
+      </a>
+
+      <nav class="hidden lg:flex items-center gap-7 text-xs font-semibold tracking-wider uppercase text-[#a3a3a3]">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="experience.html" class="nav-link">Experience</a>
+        <a href="skills.html" class="nav-link active">Skills</a>
+        <a href="projects.html" class="nav-link">Portfolio</a>
+        <a href="education.html" class="nav-link">Education</a>
+        <a href="resume.html" class="nav-link">Resume</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="hidden sm:flex items-center gap-3">
+        <a href="contact.html" class="btn-gold py-2 px-5 text-xs font-semibold">
+          <span>Let's Talk</span>
+          <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+        </a>
+      </div>
+
+      <button id="mobile-menu-btn" class="lg:hidden p-2 rounded-lg text-slate-300 hover:text-white" aria-label="Toggle navigation">
+        <i data-lucide="menu" class="w-6 h-6"></i>
+      </button>
+
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div id="mobile-menu" class="hidden fixed inset-0 z-50 bg-black/90 backdrop-blur-xl lg:hidden">
+    <div class="fixed top-0 right-0 w-4/5 max-w-sm h-full bg-[#0d0d0d] border-l border-white/10 p-6 flex flex-col justify-between overflow-y-auto">
+      <div>
+        <div class="flex items-center justify-between pb-6 border-b border-white/10">
+          <div class="flex items-center gap-2">
+            <span class="w-8 h-8 rounded-lg bg-[#e5b842]/20 border border-[#e5b842]/40 flex items-center justify-center font-bold text-[#e5b842] text-xs">AK</span>
+            <span class="font-bold text-white text-sm">Navigation</span>
+          </div>
+          <button id="close-menu-btn" class="p-2 text-slate-400 hover:text-white">
+            <i data-lucide="x" class="w-6 h-6"></i>
+          </button>
+        </div>
+
+        <nav class="mt-6 flex flex-col gap-2">
+          <a href="index.html" class="mobile-nav-link p-3 rounded-lg text-slate-300 hover:bg-white/5 hover:text-[#e5b842] flex items-center justify-between">
+            <span>Home</span> <i data-lucide="chevron-right" class="w-4 h-4 text-slate-500"></i>
+          </a>
+          <a href="about.html" class="mobile-nav-link p-3 rounded-lg text-slate-300 hover:bg-white/5 hover:text-[#e5b842] flex items-center justify-between">
+            <span>About</span> <i data-lucide="chevron-right" class="w-4 h-4 text-slate-500"></i>
+          </a>
+          <a href="experience.html" class="mobile-nav-link p-3 rounded-lg text-slate-300 hover:bg-white/5 hover:text-[#e5b842] flex items-center justify-between">
+            <span>Experience</span> <i data-lucide="chevron-right" class="w-4 h-4 text-slate-500"></i>
+          </a>
+          <a href="skills.html" class="mobile-nav-link p-3 rounded-lg text-slate-300 hover:bg-white/5 hover:text-[#e5b842] flex items-center justify-between active">
+            <span>Skills</span> <i data-lucide="chevron-right" class="w-4 h-4 text-slate-500"></i>
+          </a>
+          <a href="projects.html" class="mobile-nav-link p-3 rounded-lg text-slate-300 hover:bg-white/5 hover:text-[#e5b842] flex items-center justify-between">
+            <span>Portfolio</span> <i data-lucide="chevron-right" class="w-4 h-4 text-slate-500"></i>
+          </a>
+          <a href="education.html" class="mobile-nav-link p-3 rounded-lg text-slate-300 hover:bg-white/5 hover:text-[#e5b842] flex items-center justify-between">
+            <span>Education</span> <i data-lucide="chevron-right" class="w-4 h-4 text-slate-500"></i>
+          </a>
+          <a href="resume.html" class="mobile-nav-link p-3 rounded-lg text-slate-300 hover:bg-white/5 hover:text-[#e5b842] flex items-center justify-between">
+            <span>Resume</span> <i data-lucide="chevron-right" class="w-4 h-4 text-slate-500"></i>
+          </a>
+          <a href="contact.html" class="mobile-nav-link p-3 rounded-lg text-slate-300 hover:bg-white/5 hover:text-[#e5b842] flex items-center justify-between">
+            <span>Contact</span> <i data-lucide="chevron-right" class="w-4 h-4 text-slate-500"></i>
+          </a>
+        </nav>
+      </div>
+
+      <div class="pt-6 border-t border-white/10 flex flex-col gap-3">
+        <a href="assets/Ahbab_Ali_K_Resume.pdf" download class="btn-gold w-full text-xs">
+          <i data-lucide="download" class="w-4 h-4"></i> Download CV
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== MAIN PAGE CONTENT ==================== -->
+  <main class="relative z-10 flex-grow max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
+    
+    <div class="mb-12">
+      <span class="section-tag mb-3">TECHNICAL COMPETENCIES</span>
+      <h1 class="text-4xl sm:text-5xl font-bold text-white mt-1">Engineering Skills & Capabilities</h1>
+      <p class="text-base sm:text-lg text-[#a3a3a3] mt-2 max-w-2xl font-palatino">
+        Core capabilities across MEP plumbing systems, HVAC drafting, 3D modeling, and tender estimation.
+      </p>
+    </div>
+
+    <!-- Cluster 1: MEP Plumbing & Hydraulic Systems -->
+    <div class="mb-14">
+      <h2 class="text-xl font-bold text-[#e5b842] mb-6 flex items-center gap-2">
+        <i data-lucide="droplet" class="w-5 h-5"></i>
+        <span>MEP Plumbing & Hydraulic Systems</span>
+      </h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        
+        <div class="gold-card p-6 flex flex-col justify-between">
+          <div>
+            <div class="w-10 h-10 rounded-lg bg-[#e5b842]/10 border border-[#e5b842]/20 flex items-center justify-center text-[#e5b842] mb-4">
+              <i data-lucide="git-merge" class="w-5 h-5"></i>
+            </div>
+            <h3 class="text-lg font-bold text-white mb-2">MEP Plumbing Design</h3>
+            <p class="text-xs text-[#a3a3a3] leading-relaxed">
+              Design of commercial and healthcare plumbing systems, domestic water circulation, booster pumping systems, and drainage collection.
+            </p>
+          </div>
+          <div class="mt-4 pt-3 border-t border-white/[0.06] flex items-center justify-between text-[11px] font-mono text-[#737373]">
+            <span>Commercial & Healthcare</span>
+            <span class="text-[#e5b842]">Active Daily</span>
+          </div>
+        </div>
+
+        <div class="gold-card p-6 flex flex-col justify-between">
+          <div>
+            <div class="w-10 h-10 rounded-lg bg-[#e5b842]/10 border border-[#e5b842]/20 flex items-center justify-center text-[#e5b842] mb-4">
+              <i data-lucide="waves" class="w-5 h-5"></i>
+            </div>
+            <h3 class="text-lg font-bold text-white mb-2">Water Supply & Drainage</h3>
+            <p class="text-xs text-[#a3a3a3] leading-relaxed">
+              Pipeline sizing, fixture unit load calculations (WSFU & DFU), gravity sanitary drainage gradient planning, and soil stack ventilation.
+            </p>
+          </div>
+          <div class="mt-4 pt-3 border-t border-white/[0.06] flex items-center justify-between text-[11px] font-mono text-[#737373]">
+            <span>NBC 2016 & UPC</span>
+            <span class="text-[#e5b842]">Verified</span>
+          </div>
+        </div>
+
+        <div class="gold-card p-6 flex flex-col justify-between">
+          <div>
+            <div class="w-10 h-10 rounded-lg bg-[#e5b842]/10 border border-[#e5b842]/20 flex items-center justify-center text-[#e5b842] mb-4">
+              <i data-lucide="network" class="w-5 h-5"></i>
+            </div>
+            <h3 class="text-lg font-bold text-white mb-2">Plumbing Schematics</h3>
+            <p class="text-xs text-[#a3a3a3] leading-relaxed">
+              Single-line and double-line riser diagrams, interconnected ring water quality distribution schematics, and pump room valve manifold details.
+            </p>
+          </div>
+          <div class="mt-4 pt-3 border-t border-white/[0.06] flex items-center justify-between text-[11px] font-mono text-[#737373]">
+            <span>Ring Water Loops</span>
+            <span class="text-[#e5b842]">High Proficiency</span>
+          </div>
+        </div>
+
+        <div class="gold-card p-6 flex flex-col justify-between">
+          <div>
+            <div class="w-10 h-10 rounded-lg bg-[#e5b842]/10 border border-[#e5b842]/20 flex items-center justify-center text-[#e5b842] mb-4">
+              <i data-lucide="box" class="w-5 h-5"></i>
+            </div>
+            <h3 class="text-lg font-bold text-white mb-2">Tank Elevation Drawings</h3>
+            <p class="text-xs text-[#a3a3a3] leading-relaxed">
+              Cross-section elevations for Underground Storage Reservoirs (UG Tanks) and Overhead Water Tanks (OHT) with overflow, inlet, and drain manifolds.
+            </p>
+          </div>
+          <div class="mt-4 pt-3 border-t border-white/[0.06] flex items-center justify-between text-[11px] font-mono text-[#737373]">
+            <span>UG & OHT Reservoirs</span>
+            <span class="text-[#e5b842]">Applied in Malls</span>
+          </div>
+        </div>
+
+        <div class="gold-card p-6 flex flex-col justify-between">
+          <div>
+            <div class="w-10 h-10 rounded-lg bg-[#e5b842]/10 border border-[#e5b842]/20 flex items-center justify-center text-[#e5b842] mb-4">
+              <i data-lucide="compass" class="w-5 h-5"></i>
+            </div>
+            <h3 class="text-lg font-bold text-white mb-2">Technical Drafting & Coordination</h3>
+            <p class="text-xs text-[#a3a3a3] leading-relaxed">
+              Inter-service coordination between plumbing pipework, electrical cable trays, fire fighting lines, and HVAC duct paths to eliminate clashes.
+            </p>
+          </div>
+          <div class="mt-4 pt-3 border-t border-white/[0.06] flex items-center justify-between text-[11px] font-mono text-[#737373]">
+            <span>Spatial Clash-Free</span>
+            <span class="text-[#e5b842]">Standard Practice</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Cluster 2: Software & Modeling Tools -->
+    <div class="mb-14">
+      <h2 class="text-xl font-bold text-[#e5b842] mb-6 flex items-center gap-2">
+        <i data-lucide="layout" class="w-5 h-5"></i>
+        <span>Software & Modeling Platforms</span>
+      </h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        
+        <div class="gold-card p-6 sm:p-8 flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-[#e5b842]/10 border border-[#e5b842]/20 flex items-center justify-center text-[#e5b842] mb-5">
+              <i data-lucide="pen-tool" class="w-6 h-6"></i>
+            </div>
+            <h3 class="text-2xl font-bold text-white mb-2">AutoCAD (2D & 3D)</h3>
+            <p class="text-sm text-[#a3a3a3] leading-relaxed">
+              Over 3 years of daily production drafting. Advanced layer management, dynamic blocks, isometric pipe routings, external references (XRefs), and sheet sets. Certified by CAD Point, Manjeri.
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-white/[0.06] text-xs font-mono text-[#e5b842]">
+            Primary Platform • Certified
+          </div>
+        </div>
+
+        <div class="gold-card p-6 sm:p-8 flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-[#e5b842]/10 border border-[#e5b842]/20 flex items-center justify-center text-[#e5b842] mb-5">
+              <i data-lucide="layers" class="w-6 h-6"></i>
+            </div>
+            <h3 class="text-2xl font-bold text-white mb-2">Autodesk Revit MEP & HVAC</h3>
+            <p class="text-sm text-[#a3a3a3] leading-relaxed">
+              BIM modeling for mechanical services, duct systems, and pipe routings. Trained in parameter assignments, family placements, and automated schedule extractions. Certified by CAD Point, Manjeri.
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-white/[0.06] text-xs font-mono text-[#e5b842]">
+            Building Information Modeling • Certified
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Cluster 3: HVAC & Quantity Takeoff -->
+    <div>
+      <h2 class="text-xl font-bold text-[#e5b842] mb-6 flex items-center gap-2">
+        <i data-lucide="calculator" class="w-5 h-5"></i>
+        <span>HVAC, Quantity Takeoff & Estimation</span>
+      </h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        
+        <div class="gold-card p-6 flex flex-col justify-between">
+          <div>
+            <div class="w-10 h-10 rounded-lg bg-[#e5b842]/10 border border-[#e5b842]/20 flex items-center justify-center text-[#e5b842] mb-4">
+              <i data-lucide="wind" class="w-5 h-5"></i>
+            </div>
+            <h3 class="text-lg font-bold text-white mb-2">HVAC System Preparation</h3>
+            <p class="text-xs text-[#a3a3a3] leading-relaxed">
+              Preparation of mechanical HVAC drawings, duct layouts, diffusers/grilles coordination, and integration with architectural ceiling plans.
+            </p>
+          </div>
+          <div class="mt-4 pt-3 border-t border-white/[0.06] text-[11px] font-mono text-[#737373]">
+            Applied at A-SQUARE & AMS
+          </div>
+        </div>
+
+        <div class="gold-card p-6 flex flex-col justify-between">
+          <div>
+            <div class="w-10 h-10 rounded-lg bg-[#e5b842]/10 border border-[#e5b842]/20 flex items-center justify-center text-[#e5b842] mb-4">
+              <i data-lucide="clipboard-list" class="w-5 h-5"></i>
+            </div>
+            <h3 class="text-lg font-bold text-white mb-2">Quantity Takeoff (QTO)</h3>
+            <p class="text-xs text-[#a3a3a3] leading-relaxed">
+              Precise measurement and takeoff of pipe lengths, fittings, valves, sanitary fixtures, and equipment schedules from blueprints for Civil & MEP scopes.
+            </p>
+          </div>
+          <div class="mt-4 pt-3 border-t border-white/[0.06] text-[11px] font-mono text-[#737373]">
+            Key Deliverable in Tenders
+          </div>
+        </div>
+
+        <div class="gold-card p-6 flex flex-col justify-between">
+          <div>
+            <div class="w-10 h-10 rounded-lg bg-[#e5b842]/10 border border-[#e5b842]/20 flex items-center justify-center text-[#e5b842] mb-4">
+              <i data-lucide="file-spreadsheet" class="w-5 h-5"></i>
+            </div>
+            <h3 class="text-lg font-bold text-white mb-2">Estimation & Tendering</h3>
+            <p class="text-xs text-[#a3a3a3] leading-relaxed">
+              Preparation of detailed Bill of Quantities (BOQ), rate analysis, cost estimates, bid package compilation, and commercial feasibility studies.
+            </p>
+          </div>
+          <div class="mt-4 pt-3 border-t border-white/[0.06] text-[11px] font-mono text-[#737373]">
+            A-SQUARE & AMS Projects
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="mt-16 text-center">
+      <a href="projects.html" class="btn-gold">
+        <span>See Skills in Projects</span>
+        <i data-lucide="arrow-right" class="w-4 h-4"></i>
+      </a>
+    </div>
+
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="border-t border-white/[0.08] bg-[#050505] py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6">
+      
+      <a href="index.html" class="flex items-center gap-2.5">
+        <div class="w-8 h-8 rounded-lg bg-[#e5b842]/20 border border-[#e5b842]/40 flex items-center justify-center font-bold text-[#e5b842] text-xs">
+          AK
+        </div>
+        <span class="font-bold text-sm tracking-wider uppercase text-white">AHBAB ALI K.</span>
+      </a>
+
+      <nav class="flex flex-wrap items-center justify-center gap-6 text-xs text-[#a3a3a3]">
+        <a href="index.html" class="hover:text-white transition-colors">Home</a>
+        <a href="about.html" class="hover:text-white transition-colors">About</a>
+        <a href="experience.html" class="hover:text-white transition-colors">Experience</a>
+        <a href="skills.html" class="hover:text-white transition-colors">Skills</a>
+        <a href="projects.html" class="hover:text-white transition-colors">Portfolio</a>
+        <a href="education.html" class="hover:text-white transition-colors">Education</a>
+        <a href="resume.html" class="hover:text-white transition-colors">Resume</a>
+        <a href="contact.html" class="hover:text-white transition-colors">Contact</a>
+      </nav>
+
+      <div class="flex items-center gap-4 text-xs text-[#737373]">
+        <p>&copy; 2026 Ahbab Ali K. All Rights Reserved.</p>
+        <button onclick="window.scrollTo({top: 0, behavior: 'smooth'})" class="w-8 h-8 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:text-white transition-colors" title="Scroll to top">
+          <i data-lucide="arrow-up" class="w-4 h-4"></i>
+        </button>
+      </div>
+
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
