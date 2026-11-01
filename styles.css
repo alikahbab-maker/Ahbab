@@ -372,3 +372,105 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background: var(--gold-dark);
 }
+
+/* ========================================================
+   Sliding Testimonials & Pushing Cartoon Engineer
+   ======================================================== */
+.testimonials-slider-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding: 1.5rem 0 2.5rem 0;
+}
+
+/* Glassmorphic fade masks on the edges */
+.testimonials-slider-container::before,
+.testimonials-slider-container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 80px;
+  z-index: 10;
+  pointer-events: none;
+}
+.testimonials-slider-container::before {
+  left: 0;
+  background: linear-gradient(to right, #080808, transparent);
+}
+.testimonials-slider-container::after {
+  right: 0;
+  background: linear-gradient(to left, #080808, transparent);
+}
+
+.testimonials-track {
+  display: flex;
+  gap: 1.5rem;
+  width: max-content;
+  animation: slideLeftTrack 38s linear infinite;
+  will-change: transform;
+}
+
+.testimonials-track:hover {
+  animation-play-state: paused;
+}
+
+@keyframes slideLeftTrack {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Glass Box Styling */
+.testimonial-glass-card {
+  width: 380px;
+  max-width: 85vw;
+  flex-shrink: 0;
+  background: rgba(18, 18, 18, 0.55);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(229, 184, 66, 0.22);
+  border-radius: 1.25rem;
+  padding: 1.75rem;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.45), inset 0 1px 1px rgba(255, 255, 255, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.35s ease, box-shadow 0.35s ease;
+}
+
+.testimonial-glass-card:hover {
+  transform: translateY(-4px) scale(1.02);
+  border-color: rgba(229, 184, 66, 0.55);
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.6), 0 0 20px rgba(229, 184, 66, 0.2), inset 0 1px 2px rgba(255, 255, 255, 0.2);
+}
+
+/* Engineer Cartoon Pusher Animation */
+.engineer-pusher-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.engineer-pusher-svg {
+  filter: drop-shadow(0 0 10px rgba(229, 184, 66, 0.35));
+  animation: pusherEffort 1.6s ease-in-out infinite alternate;
+  transform-origin: bottom center;
+}
+
+@keyframes pusherEffort {
+  0% {
+    transform: rotate(0deg) translateX(0);
+  }
+  50% {
+    transform: rotate(-3deg) translateX(-6px);
+  }
+  100% {
+    transform: rotate(-5deg) translateX(-10px);
+  }
+}
